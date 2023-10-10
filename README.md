@@ -80,6 +80,7 @@ Necesitamos una API para tratar el tema de divisas. Para ello necesitamos:
 
 ### Consideraciones
 
+- Se valorara la implementación de un frontend con vuejs 3.
 - Se valorará el uso de CQRS, DDD y arquitectura hexagonal, para ello se ha dejado en el namespace Hoyvoy (carpeta src) un ejemplo muy básico usado en el endpoint http://localhost/api/example pero se puede estructurar el código de la manera que consideres oportuna, tienes un ejemplo de como lo implementan en symfony en el repositorio https://github.com/CodelyTV/php-ddd-example.
 - Los datos se pueden almacenar en cualquier formato ya sea base de datos, json...
 - Que la API usada para actualizar el cambio de divisas se pueda cambiar de la manera mas fácil possible.
