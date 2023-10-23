@@ -6,8 +6,8 @@
     - [Requisitos](#Requisitos)
     - [Instalación](#Instalación)
 - [Prueba](#Prueba)
-    - [Explicación](#Explicación)
     - [Consideraciones](#Consideraciones)
+    - [Explicación](#Explicación)
     - [Entrega](#Entrega)
 
 ## Setup
@@ -33,6 +33,13 @@
 4. Si vamos a [localhost example](http://localhost/api/example) debería estar funcionando devolviendo un uuid v4 random.
 
 ## PRUEBA
+
+### Consideraciones
+
+- Se valorara la implementación de un frontend con vue 3.
+- Se valorará el uso de CQRS, DDD y arquitectura hexagonal, para ello se ha dejado en el namespace Hoyvoy (carpeta src) un ejemplo muy básico usado en el endpoint http://localhost/api/example pero se puede estructurar el código de la manera que consideres oportuna, tienes un ejemplo de como lo implementan en symfony en el repositorio https://github.com/CodelyTV/php-ddd-example.
+- Los datos se pueden almacenar en cualquier formato ya sea base de datos, json...
+- Evitar estar acoplados a la API de cambio de divisas [Fixer](https://fixer.io/documentation) o la que se utilice para poder cambiar de servicio lo más facil possible.
 
 ### Explicación
 
@@ -78,13 +85,6 @@ Necesitamos una API para tratar el tema de divisas. Para ello necesitamos:
     }
     ```
 
-### Consideraciones
-
-- Se valorara la implementación de un frontend con vuejs 3.
-- Se valorará el uso de CQRS, DDD y arquitectura hexagonal, para ello se ha dejado en el namespace Hoyvoy (carpeta src) un ejemplo muy básico usado en el endpoint http://localhost/api/example pero se puede estructurar el código de la manera que consideres oportuna, tienes un ejemplo de como lo implementan en symfony en el repositorio https://github.com/CodelyTV/php-ddd-example.
-- Los datos se pueden almacenar en cualquier formato ya sea base de datos, json...
-- Que la API usada para actualizar el cambio de divisas se pueda cambiar de la manera mas fácil possible.
-
 ### Entrega
 
-La entrega de la prueba será mediante la creación de un fork del repositorio haciendo una pull request.
+La entrega de la prueba será mediante la creación de un repositorio privado dando acceso a maguilar@hoyvoy.com (maguilar92).
