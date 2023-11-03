@@ -50,7 +50,7 @@ Necesitamos una API para tratar el tema de divisas. Para ello necesitamos:
 
 - 2 ENDPOINTS
 
-  [GET] http://localhost/api/currecies 
+  [GET] http://localhost/api/currencies 
     
   En este endpoint tenemos que poder ver todas las divisas y la respuesta debe ser:
   ```json
@@ -71,7 +71,7 @@ Necesitamos una API para tratar el tema de divisas. Para ello necesitamos:
   }
   ```
 
-  [GET] http://localhost/api/currecies/rate-conversion
+  [GET] http://localhost/api/currencies/rate-conversion
 
     En este endpoint tenemos que enviar 3 parametros que són `from`, `to` y `amount`. El retorno debería ser:
     ```json
