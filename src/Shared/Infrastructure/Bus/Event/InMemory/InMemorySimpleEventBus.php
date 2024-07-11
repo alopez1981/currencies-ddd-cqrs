@@ -18,7 +18,7 @@ class InMemorySimpleEventBus implements EventBus
     public function __construct()
     {
         /** @var string[] $scanDirs */
-        $scanDirs = base_path('src/**/*');
+        $scanDirs[] = base_path('src/**/*');
 
         $eventsSubscribers = [];
 
@@ -35,7 +35,7 @@ class InMemorySimpleEventBus implements EventBus
 
         $this->subscribers = file_exists(base_path('bootstrap/cache/event_bus.php')) ?
             require base_path('bootstrap/cache/event_bus.php') :
-            [];
+            $eventsSubscribers;
     }
 
     public function publish(DomainEvent ...$events): void
