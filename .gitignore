@@ -16,3 +16,11 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+
+# claves y secretos
+laradock/workspace/insecure_id_rsa
+id_rsa*
+id_ed25519*
+*.pem
+*.key
+.env
