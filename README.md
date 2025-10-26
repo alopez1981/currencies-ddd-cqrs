@@ -15,7 +15,7 @@ actualizar tasas de conversión automáticamente y realizar intercambios entre m
 
 ---
 
-## ⚙ **Instalación y ejecución**
+## **Instalación y ejecución**
 
 ### Requisitos
 

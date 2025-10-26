@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool)env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -169,6 +169,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Hoyvoy\Shared\Infrastructure\Laravel\Providers\BusServiceProvider::class,
+        Hoyvoy\Currencies\Infrastructure\Laravel\CurrencyServiceProvider::class,
     ])->toArray(),
 
     /*
